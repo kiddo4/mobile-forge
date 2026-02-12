@@ -1,0 +1,22 @@
+{
+	"name": "theme-mobileforge",
+	"displayName": "MobileForge Theme",
+	"description": "Flutter-First Dark Theme for MobileForge IDE",
+	"version": "1.0.0",
+	"publisher": "mobileforge",
+	"engines": {
+		"vscode": "^1.107.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"contributes": {
+		"themes": [
+			{
+				"label": "MobileForge Dark",
+				"uiTheme": "vs-dark",
+				"path": "./themes/mobileforge-dark-color-theme.json"
+			}
+		]
+	}
+}

@@ -1,0 +1,299 @@
+/*---------------------------------------------------------------------------------------------
+ *  MobileForge IDE - Custom UI Styles
+ *  Complete visual transformation to look nothing like VS Code
+ *--------------------------------------------------------------------------------------------*/
+
+/* Hide all VS Code branding */
+.monaco-workbench .part.titlebar > .titlebar-container > .titlebar-center .window-title:before {
+	content: 'MobileForge IDE' !important;
+}
+
+/* Custom welcome page branding */
+.welcome-page .title {
+	background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+	-webkit-background-clip: text !important;
+	-webkit-text-fill-color: transparent !important;
+	font-size: 48px !important;
+	font-weight: bold !important;
+}
+
+/* Replace "Get Started with VS Code" */
+.getting-started-category[data-category-id*="Setup"] .category-title,
+.getting-started-category .category-title {
+	position: relative;
+}
+
+/* Custom activity bar styling */
+.monaco-workbench .activitybar {
+	background: linear-gradient(180deg, #0a0a15 0%, #16162a 100%) !important;
+	border-right: 1px solid #667eea33 !important;
+}
+
+.monaco-workbench .activitybar .action-item.checked .active-item-indicator {
+	border-left-color: #60d9fa !important;
+	border-left-width: 3px !important;
+}
+
+.monaco-workbench .activitybar .action-label {
+	color: #ccd6f6 !important;
+}
+
+.monaco-workbench .activitybar .action-label:hover {
+	color: #ffffff !important;
+	background: #667eea22 !important;
+}
+
+/* Custom status bar */
+.monaco-workbench .part.statusbar {
+	background: linear-gradient(90deg, #667eea 0%, #764ba2 100%) !important;
+	color: #ffffff !important;
+	font-weight: 500 !important;
+}
+
+.monaco-workbench .part.statusbar .statusbar-item {
+	color: #ffffff !important;
+}
+
+/* Custom sidebar */
+.monaco-workbench .part.sidebar {
+	background: #16162a !important;
+	border-right: 1px solid #667eea22 !important;
+}
+
+.monaco-workbench .part.sidebar .title {
+	background: #0f0f1e !important;
+	color: #eaeaea !important;
+	font-weight: 600 !important;
+	text-transform: uppercase !important;
+	letter-spacing: 1px !important;
+	font-size: 11px !important;
+}
+
+/* Custom panel (terminal, output, etc) */
+.monaco-workbench .part.panel {
+	background: #1a1a2e !important;
+	border-top: 2px solid #667eea !important;
+}
+
+.monaco-workbench .part.panel .title {
+	background: #0f0f1e !important;
+	color: #ccd6f6 !important;
+}
+
+/* Custom editor tabs */
+.monaco-workbench .part.editor .title {
+	background: #0f0f1e !important;
+}
+
+.monaco-workbench .part.editor .tabs-container .tab {
+	background: #16162a !important;
+	color: #8892b0 !important;
+	border-right: 1px solid #0a0a15 !important;
+}
+
+.monaco-workbench .part.editor .tabs-container .tab.active {
+	background: #1a1a2e !important;
+	color: #eaeaea !important;
+	border-bottom: 2px solid #60d9fa !important;
+}
+
+.monaco-workbench .part.editor .tabs-container .tab:hover {
+	background: #1a1a2e !important;
+	color: #ccd6f6 !important;
+}
+
+/* Custom quick input (command palette) */
+.monaco-workbench .quick-input-widget {
+	background: #16162a !important;
+	border: 2px solid #667eea !important;
+	border-radius: 8px !important;
+	box-shadow: 0 8px 32px rgba(102, 126, 234, 0.3) !important;
+}
+
+.monaco-workbench .quick-input-widget .quick-input-header {
+	background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+	padding: 16px !important;
+	border-radius: 8px 8px 0 0 !important;
+}
+
+.monaco-workbench .quick-input-widget input {
+	background: #1a1a2e !important;
+	color: #eaeaea !important;
+	border: 1px solid #667eea44 !important;
+	border-radius: 4px !important;
+	padding: 12px !important;
+	font-size: 16px !important;
+}
+
+.monaco-workbench .quick-input-widget .quick-input-list .monaco-list-row.focused {
+	background: #667eea33 !important;
+	border-left: 3px solid #60d9fa !important;
+}
+
+/* Custom notifications */
+.monaco-workbench .notifications-toasts {
+	bottom: 24px !important;
+	right: 24px !important;
+}
+
+.monaco-workbench .notification-toast {
+	background: #16162a !important;
+	border: 1px solid #667eea44 !important;
+	border-radius: 8px !important;
+	box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5) !important;
+}
+
+.monaco-workbench .notification-toast.notification-toast-info {
+	border-left: 4px solid #60d9fa !important;
+}
+
+.monaco-workbench .notification-toast .notification-toast-icon {
+	color: #60d9fa !important;
+}
+
+/* Custom scrollbars */
+.monaco-workbench ::-webkit-scrollbar {
+	width: 12px !important;
+	height: 12px !important;
+}
+
+.monaco-workbench ::-webkit-scrollbar-track {
+	background: #0a0a15 !important;
+}
+
+.monaco-workbench ::-webkit-scrollbar-thumb {
+	background: linear-gradient(180deg, #667eea 0%, #764ba2 100%) !important;
+	border-radius: 6px !important;
+	border: 2px solid #0a0a15 !important;
+}
+
+.monaco-workbench ::-webkit-scrollbar-thumb:hover {
+	background: linear-gradient(180deg, #764ba2 0%, #667eea 100%) !important;
+}
+
+/* Custom context menus */
+.monaco-workbench .monaco-menu .monaco-action-bar.vertical {
+	background: #16162a !important;
+	border: 1px solid #667eea44 !important;
+	border-radius: 6px !important;
+	box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5) !important;
+}
+
+.monaco-workbench .monaco-menu .monaco-action-bar.vertical .action-item:hover {
+	background: #667eea33 !important;
+}
+
+/* Custom buttons */
+.monaco-workbench .monaco-button {
+	background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+	border: none !important;
+	border-radius: 6px !important;
+	color: #ffffff !important;
+	font-weight: 600 !important;
+	padding: 10px 20px !important;
+	transition: all 0.3s ease !important;
+}
+
+.monaco-workbench .monaco-button:hover {
+	transform: translateY(-2px) !important;
+	box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4) !important;
+}
+
+/* Custom input fields */
+.monaco-workbench input[type="text"],
+.monaco-workbench input[type="password"],
+.monaco-workbench textarea {
+	background: #1a1a2e !important;
+	border: 1px solid #667eea44 !important;
+	border-radius: 4px !important;
+	color: #eaeaea !important;
+	padding: 8px 12px !important;
+}
+
+.monaco-workbench input[type="text"]:focus,
+.monaco-workbench input[type="password"]:focus,
+.monaco-workbench textarea:focus {
+	border-color: #60d9fa !important;
+	outline: none !important;
+	box-shadow: 0 0 0 2px rgba(96, 217, 250, 0.2) !important;
+}
+
+/* Hide VS Code splash screen/logo */
+.monaco-workbench .splash .splash-logo {
+	display: none !important;
+}
+
+/* Custom welcome overlay branding */
+.monaco-workbench .welcomePageContainer h1.caption {
+	font-size: 42px !important;
+	background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+	-webkit-background-clip: text !important;
+	-webkit-text-fill-color: transparent !important;
+}
+
+/* Add Flutter/Mobile icons glow effect */
+.monaco-workbench .codicon-rocket:before,
+.monaco-workbench .codicon-device-mobile:before,
+.monaco-workbench .codicon-code:before {
+	text-shadow: 0 0 8px rgba(96, 217, 250, 0.6) !important;
+}
+
+/* Custom empty editor view */
+.monaco-workbench .empty-editor-group {
+	background: radial-gradient(circle at center, #16162a 0%, #0a0a15 100%) !important;
+}
+
+.monaco-workbench .empty-editor-group .empty-editor-group-watermark {
+	color: #667eea !important;
+	font-size: 24px !important;
+	text-align: center !important;
+}
+
+/* Brand all "Visual Studio Code" text as "MobileForge IDE" */
+.monaco-workbench *:not(script):not(style) {
+	/* This will be handled by text replacement in JS */
+}
+
+/* Custom window controls (close, minimize, maximize) */
+.monaco-workbench .window-controls-container .window-icon {
+	color: #ccd6f6 !important;
+}
+
+.monaco-workbench .window-controls-container .window-icon:hover {
+	background: #667eea33 !important;
+	color: #ffffff !important;
+}
+
+/* Add gradient animations */
+@keyframes gradient-shift {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.monaco-workbench .part.statusbar {
+	background-size: 200% 200% !important;
+	animation: gradient-shift 10s ease infinite !important;
+}
+
+/* Custom glow for active items */
+.monaco-workbench .monaco-list-row.focused,
+.monaco-workbench .monaco-list-row.selected {
+	background: #667eea22 !important;
+	border-left: 3px solid #60d9fa !important;
+	box-shadow: 0 0 12px rgba(96, 217, 250, 0.2) !important;
+}
+
+/* Flutter/Mobile themed accents */
+.monaco-workbench .activity-bar-badge {
+	background: linear-gradient(135deg, #60d9fa 0%, #667eea 100%) !important;
+	color: #ffffff !important;
+	font-weight: bold !important;
+	box-shadow: 0 2px 8px rgba(96, 217, 250, 0.4) !important;
+}
