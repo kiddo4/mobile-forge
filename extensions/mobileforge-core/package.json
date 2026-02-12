@@ -1,0 +1,69 @@
+{
+	"name": "mobileforge-core",
+	"displayName": "MobileForge Core",
+	"description": "Core features for MobileForge IDE - AI-powered mobile development",
+	"version": "0.1.0",
+	"publisher": "mobileforge",
+	"license": "MIT",
+	"engines": {
+		"vscode": "^1.107.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onStartupFinished"
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"configurationDefaults": {
+			"workbench.startupEditor": "none",
+			"workbench.colorTheme": "MobileForge Dark"
+		},
+		"commands": [
+			{
+				"command": "mobileforge.showWelcome",
+				"title": "MobileForge: Show Welcome",
+				"category": "MobileForge"
+			},
+			{
+				"command": "mobileforge.checkEnvironment",
+				"title": "MobileForge: Check Environment Health",
+				"category": "MobileForge"
+			}
+		],
+		"viewsContainers": {
+			"activitybar": [
+				{
+					"id": "mobileforge",
+					"title": "MobileForge",
+					"icon": "resources/mobileforge-icon.svg",
+					"order": 0
+				}
+			]
+		},
+		"views": {
+			"mobileforge": [
+				{
+					"id": "mobileforge.environmentHealth",
+					"name": "Environment Health"
+				},
+				{
+					"id": "mobileforge.quickActions",
+					"name": "Quick Actions"
+				}
+			]
+		}
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"lint": "eslint src --ext ts"
+	},
+	"devDependencies": {
+		"@types/node": "^22.0.0",
+		"@types/vscode": "^1.95.0",
+		"typescript": "^5.7.2"
+	}
+}
